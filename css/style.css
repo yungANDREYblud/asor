@@ -3,6 +3,7 @@
     --color_orange: #FF7C33;
     --color_white: #FFFFFF;
     --color_black: #171A1A;
+    --color_gray: #D9D9D9;
 }
 *{
     margin: 0;
@@ -67,13 +68,140 @@ main{
 }
 
 
+.filters{
+    margin-top: 99px;
+    width: 268px;
+    height: 1169px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+.sx{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.sx-items{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    padding-bottom: 44px;
+    column-gap: 20px;
+    align-items: center;
+}
+.sx-items .men{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-color: var(--color_gray);
+    transition: all 0.6s ease;
+}
+.sx-items .wum{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-color: var(--color_gray);
+    transition: all 0.6s ease;
+}
+.sx-items .men:hover{
+    background-color: var(--color_orange);
+}
+.sx-items .wum:hover{
+    background-color: var(--color_orange);
+}
+
+.price{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.price-items{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.price-items form input{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pol{
+    padding-top: 25px;
+    padding-left: 15px;
+}
+.pol input[type="range"] {
+    -webkit-appearance:none !important;
+    width: 171px;
+    height: 4px;
+    background: var(--color_orange);
+    border: none;
+    outline: none;
+}
+.pol input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 23px;
+    height: 23px;
+    background: #D9D9D9;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 
+.size{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.size form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding-top: 20px;
+    padding-bottom: 33px;
+    row-gap: 14px;
+}
+.size form button{
+    width: 55px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border: 1px solid black;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+.size form button:hover{
+    background-color: var(--color_orange);
+    color: white;
+}
 
-
-
-
-
+.ac{
+    
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.ac-items{
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    column-gap: 20px;
+}
+.acor{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-color: var(--color_gray);
+    transition: all 0.6s ease;
+}
+.acor:hover{
+    background-color: var(--color_orange);
+}
 
 
 
